@@ -11,9 +11,25 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 <div class="input-box">
-  <input type="password" placeholder="password">
-  <span class="glyphicon glyphicon-eye-open"></span>
+  <input type="password" placeholder="password" id="password">
+  <span class="glyphicon glyphicon-eye-close"></span>
+  <img id="eyeicon">
+
 
 </div>
+
+
+<script>
+  let eyeicon=document.getElementById("eyeicon");
+  let password=document.getElementById("password");
+
+  eyeicon.onclick=function(){
+    if(password.type=="password"){
+      password.type="text";
+    }else{
+      password.type="password";
+    }
+  }
+</script>
   </body>
 </html>
