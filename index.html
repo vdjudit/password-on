@@ -5,15 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 <div class="input-box">
   <input type="password" placeholder="password" id="password">
-  <span class="glyphicon glyphicon-eye-close"></span>
-  <img id="eyeicon">
+  <img src="https://www.veryicon.com/icons/photographic/ant-design-official-icon-library/eye-close-1.html" id="eyeicon">
+  
+  
 
 
 </div>
@@ -26,10 +27,12 @@
   eyeicon.onclick=function(){
     if(password.type=="password"){
       password.type="text";
-      eyicon.class="glyphicon glyphicon-eye-open"
+      eyeicon.src="https://www.istockphoto.com/hu/fot%C3%B3/szem-ikon-fekete-gm811311314-131269663"
+      
     }else{
       password.type="password";
-      eyeicon.class="glyphicon glyphicon-eye-close"
+      eyeicon.src=""https://www.veryicon.com/icons/photographic/ant-design-official-icon-library/eye-close-1.html""
+      
     }
   }
 </script>
